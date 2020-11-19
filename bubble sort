@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, arr[100], p, h, box, k;
+  
+  printf("сколько чисел отсортировать?\n");
+  scanf("%d", &a);
+  printf("вводи %d чисел\n", a);
+  for (p = 0;  p < a; p++)
+    scanf("%d", &arr[p]);
+    for(k = 0; k < a; k++)
+  printf("%d\t\n", arr[k]);
+ int i, j;
+    for(i = 0; i < a; i++){
+      for(j = 0; j < a - i - 1; j++){
+      if(arr[j]>arr[j+1])
+      {box = arr[j];
+       arr[j]=arr[j+1];
+        arr[j + 1] = box;
+      }
+    }
+    }for(k = 0; k < a; k++)
+  printf("%d\t", arr[k]);
+    
+    return 0;}
